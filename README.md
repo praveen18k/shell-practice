@@ -1,5 +1,4 @@
-# Git connectivity to GitHub
-
+# GitHub access from local git
 1. Go to home folder
     $ cd /c/devops-practice/shell-practice/ 
 2. Create SSH key, it will create 2 new keys under c/user/username
@@ -13,7 +12,7 @@
     $ git remote add origin git@github.com:praveen18k/shell-practice.git
 8. Third step 
     $ git add . ; git commit -m "Related message" ; git push origin master
-Note - if you want to check git configuration
+9. if you want to check git configuration
     $ cat .git/config
 
 
