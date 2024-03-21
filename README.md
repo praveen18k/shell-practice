@@ -1,6 +1,6 @@
 # GitHub access from local git
 1. Go to home folder
-$ cd /c/devops-practice/shell-practice/ 
+    $ cd /c/devops-practice/shell-practice/ 
 2. Create SSH key, it will create 2 new keys under c/user/username
     $ ssh-keygen -f <keyname>
 3. Change privaite key extention to .pem and paste public key(.pub) in Github.
