@@ -1,8 +1,8 @@
 # GitHub access from local git
 01. Go to home folder
-    - $ cd /c/devops-practice/shell-practice/ 
+    - **$ cd /c/devops-practice/shell-practice/** 
 02. Create SSH key, it will create 2 new keys under c/user/username
-    - $ ssh-keygen -f <keyname>
+    - ** $ ssh-keygen -f <keyname>**
 03. Change privaite key extention to .pem and paste public key(.pub) in Github.
 04. Create repository in GitHub and create READ.md file
 05. Create folder in local laptop and open this location in git
