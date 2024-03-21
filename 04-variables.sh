@@ -2,8 +2,8 @@
 
 #addition of 2 numbers
 
-NUM=$1
-NUM=$2
+NUM1=$1
+NUM2=$2
 #I need to run a command inside shell to add these 2 numbers
 
 SUM=$((NUM1+NUM2))
