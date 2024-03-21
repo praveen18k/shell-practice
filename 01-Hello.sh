@@ -1,6 +1,4 @@
 #!/bin/bash
-
-echo "Hello this is my practice session"
 #we use variables that follows DRY - principles
 
 Person1=Praveen
