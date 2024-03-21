@@ -1,1 +1,2 @@
-Class runtime interview Questions
+Q - How to execute a command inside shell script and take the output ?
+A - 
