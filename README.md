@@ -11,7 +11,7 @@
 07. Second step 
     - **$ git remote add origin git@github.com:praveen18k/shell-practice.git**
 08. Third step 
-    - **$ git add . ; git commit -m "Related message" ; git push origin master** 
+    - **$ git add . ; git commit -m "Related message" ; git push origin master ** 
 09. Fourth step - pull from GitHub to VM
     - **$ git pull**
 10. Fifth step - execute script
