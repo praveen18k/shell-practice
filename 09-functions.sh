@@ -15,6 +15,21 @@
     #here you write your statements,and call this function whenever required.
 #}
 
+DATE=$(date +%f)
+SCRIPT_NAME=$0
+LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
+
+#this funtion should validate the previous command and inform to user it is success or failure
+VALIDATE(){
+if [ $1 -ne 0 ]
+then 
+    echo "$2...Failure"
+    exit 1
+else
+    echo "$2...Success"
+fi
+}
+
 Userid=$(id -u) 
 if [ $Userid -ne 0 ]
 then 
@@ -25,22 +40,11 @@ then
 fi 
 
 #it is our responsibility again to check installation is success or not
-yum install git -y
 
-if [ $? -ne 0 ]
-then 
-    echo "Installation of git is error"
-    exit 1
-else
-    echo "Installation os git is success"
-fi
+yum install git -y &>>$LOGFILE
 
-yum install postfix -y
+VALIDATE $? "Installing git"
 
-if [ $? -ne 0 ]
-then 
-    echo "Installation of postfix is error"
-    exit 1
-else
-    echo "Installation os postfix is success"
-fi
+yum install postfix -y &>>$LOGFILE
+
+VALIDATE $? "Installing postfix"
