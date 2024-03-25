@@ -20,8 +20,8 @@ Userid=$(id -u)
 if [ $Userid -ne 0 ]
 then 
     echo "Error:: please run this with sudo access"
-else
-    echo "Info:: You are root user"
+#else
+   # echo "Info:: You are root user"
 fi 
 
 
