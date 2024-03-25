@@ -15,7 +15,7 @@
     #here you write your statements,and call this function whenever required.
 #}
 
-DATE=$(date +%f)
+DATE=$(date +%F)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/$SCRIPT_NAME-$DATE.log
 
