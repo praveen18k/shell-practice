@@ -36,6 +36,17 @@ else
     echo "Installation os git is success"
 fi
 
+yum install postfix -y
+
+if [ $? -ne 0 ]
+then 
+    echo "Installation of postfix is error"
+    exit 1
+else
+    echo "Installation os postfix is success"
+fi
+
+
 
 
 
