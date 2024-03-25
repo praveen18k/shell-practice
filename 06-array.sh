@@ -10,4 +10,4 @@ echo "First Person: ${Persons[0]}"
 
 #if you want all persons names 
 
-echo "All Persons names: ${Persons[@]}
+echo "All Persons names: ${Persons[@]}"
