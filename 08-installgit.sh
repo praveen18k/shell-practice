@@ -10,7 +10,7 @@
 #Q)This is the imp interview @ what is exit status ?
 #A- By default shell script cannot understand the previous command is success or failure, it is our responsibility to check that is through the Exit status, if exit status is 0 we can consider it as sucess if exit status is 1 to 127 we can consider it as failure.
 
-#**Functions**: You will keep some code inside functions which is more often repeated, and call whenever you required.
+- **Functions**: You will keep some code inside functions which is more often repeated, and call whenever you required.
 
 #Script goal is to install MySql
 
