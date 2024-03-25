@@ -2,7 +2,7 @@
 
 #this is array, insted of single value it can hold multiple values.
 
-Persons=("Praveen", "Naveen", "Shekar")
+Persons=("Praveen" "Naveen" "Shekar")
 
 #inside array we always refer values with index and it starts from 0
 
