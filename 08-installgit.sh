@@ -16,7 +16,7 @@
 #2- if not root user, exit the program and inform user to run with sudo access.
 #3- if root user install MySql.
 
-Userid=$(id -su) 
+Userid=$(id -u) 
 if [ $Userid -ne 0 ]
 then 
     echo "Error:: please run this with sudo access"
