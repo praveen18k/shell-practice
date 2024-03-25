@@ -25,7 +25,17 @@ then
    # echo "Info:: You are root user"
 fi 
 
+#it is our responsibility again to check installation is success or not
 yum install git -y
+
+if [ $? -ne 0 ]
+then 
+    echo "Installation of git is error"
+    exit 1
+else
+    echo "Installation os git is success"
+fi
+
 
 
 
