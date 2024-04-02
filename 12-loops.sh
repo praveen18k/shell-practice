@@ -11,7 +11,7 @@
 
 #all args are in $@
 
-DATE=$(Date +%F)
+DATE=$(date +%F)
 SCRIPT_NAME=$0
 LOGFILE=/tmp/shell-logs/$SCRIPT_NAME-$DATE.log
 Userid=$(id -u)
