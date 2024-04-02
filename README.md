@@ -17,7 +17,7 @@
 10. Fifth step - execute script
     - **$ sh 01-Hello.sh**
 11. **Note** - if you want to check git configuration
-    - **$ cat .git/config**
+    - ***$ cat .git/config***
 
 
 
