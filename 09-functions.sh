@@ -10,6 +10,7 @@
 #&>> --> to redirect the success or failure output(log files)
 #Date and time stamps are important when we are executing scripts.
 #If you add colors for Success and Failure output messages it looks good.
+#Validations - Validations are required to know the installation is success or not.
 #syntax for colors 
 #\e[31m --> Red
 #\e\[32m -->Green
