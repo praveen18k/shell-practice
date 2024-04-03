@@ -17,7 +17,6 @@ LOGFILE=/tmp/shell-logs/$SCRIPT_NAME-$DATE.log
 Userid=$(id -u)
 
 Validations() {
-
     if [ $1 -ne 0 ]
     then 
         echo "$2...Installation failure"
