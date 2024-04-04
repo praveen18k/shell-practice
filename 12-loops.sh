@@ -37,5 +37,6 @@ do
     yum install $i -y &>>$LOGFILE
 
     Validations $? " Installing git"
+
 done
 
