@@ -41,7 +41,7 @@ for i in $@
 do
     yum install $i -y &>>$LOGFILE
 
-    Validations $? " Installing git"
+    Validations $? " Installation of $i.."
 
 done
 
