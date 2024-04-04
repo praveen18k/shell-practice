@@ -18,7 +18,7 @@ Userid=$(id -u)
 
 R="\e[31m"
 G="\e[32m"
-Y="\e[33"
+Y="\e[33m"
 N="\e[0m"
 
 Validations() {
@@ -33,7 +33,7 @@ Validations() {
 
 if [ $Userid -ne 0 ]
 then
-    echo -e "$R Error:: run this with root access"
+    echo -e "$Y Error:: run this with root access $N"
     exit 1
 fi
 
