@@ -25,10 +25,10 @@ N="\e[0m"
 Validations() {
     if [ $1 -ne 0 ]
     then 
-        echo -e "$2...$R failure $N"
+        echo -e "Installing $2...$R failure $N"
         exit 1
     else
-        echo -e "$2...$G success $N"
+        echo -e "Installing $2...$G success $N"
     fi
 }
 
@@ -40,9 +40,14 @@ fi
 
 for i in $@
 do
-    yum install $i -y &>>$LOGFILE
-
-    Validations $? " Installation of $i"
-
+    yum list install $i -y &>>$LOGFILE
+    if [ $? -ne 0 ]
+    then
+        echo " $i is not istalled, lets install"
+        yum install $i -y &>>$LOGFILE    
+        Validations $? "$i"
+    else
+        echo "$Y $i already installed $N"
+    fi
 done
 
