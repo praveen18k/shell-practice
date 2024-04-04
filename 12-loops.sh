@@ -12,8 +12,9 @@
 #all args are in $@
 
 DATE=$(date +%F)
+LOGDIR=/home/centos/shell-logs
 SCRIPT_NAME=$0
-LOGFILE=/tmp/shell-logs/$SCRIPT_NAME-$DATE.log
+LOGFILE=$LOGDIR/$SCRIPT_NAME-$DATE.log
 Userid=$(id -u)
 
 R="\e[31m"
