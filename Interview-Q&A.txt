@@ -1,2 +1,6 @@
 Q - How to execute a command inside shell script and take the output ?
 A - EX:shell script run the command inside $() and stores the output into variable called DATE.
+Q- What is sed editor?
+A- sed is streamline editor, we use it in runtime 
+    ex: sed -e '1 Good morning' --> this is temparary change
+    ex: sed -i '1 Good morning' --> this is permanent change of first line
