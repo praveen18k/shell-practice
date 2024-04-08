@@ -21,6 +21,12 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
+if [ $Userid -ne 0 ]
+then
+    echo -e "$Y Error:: run this with root access $N"
+    exit 1
+fi
+
 Validations() {
     if [ $1 -ne 0 ]
     then 
@@ -30,12 +36,6 @@ Validations() {
         echo -e "Installing $2...$G success $N"
     fi
 }
-
-if [ $Userid -ne 0 ]
-then
-    echo -e "$Y Error:: run this with root access $N"
-    exit 1
-fi
 
 for i in $@
 do
