@@ -4,3 +4,5 @@ Q- What is sed editor?
 A- sed is streamline editor, we use it in runtime 
     ex: sed -e '1 Good morning' --> this is temparary change
     ex: sed -i '1 Good morning' --> this is permanent change of first line
+Q - What is Ad-Hoc commands in Ansible?
+A - Ansible command line option is to do something in emergency cases.
