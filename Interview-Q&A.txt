@@ -6,3 +6,6 @@ A- sed is streamline editor, we use it in runtime
     ex: sed -i '1 Good morning' --> this is permanent change of first line
 Q - What is Ad-Hoc commands in Ansible?
 A - Ansible command line option is to do something in emergency cases.
+Q - Imp** Difference between Shell vs Command?
+A - Shell: You are inside the server and running commands, you can get access to user variables and entire environment.
+    Command: It will not get user environment and usually <, > , accessing user variables may not work. you cannot do the redirections     and inputs.
