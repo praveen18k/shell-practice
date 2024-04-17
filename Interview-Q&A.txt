@@ -9,3 +9,7 @@ A - Ansible command line option is to do something in emergency cases.
 Q - Imp** Difference between Shell vs Command?
 A - Shell: You are inside the server and running commands, you can get access to user variables and entire environment.
     Command: It will not get user environment and usually <, > , accessing user variables may not work. you cannot do the redirections     and inputs.
+Q - What is Ansible role? (Imp Q)
+A - Ansible role is a proper directory structure of Ansible to reuse the Variables, files, Handlers, tasks.
+Q - What is the handler ?
+A - Handler is the one whenever there is a chnage in configuration Ansible can notify the task. for example if there is a change in the Nginx configuration we can keep it one handler to restart the Ansible server.
